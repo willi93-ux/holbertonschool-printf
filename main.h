@@ -1,14 +1,12 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 
-/**
- * _printf - Fonction simplifiée pour gérer les formats %c et %s
- * @format: Chaîne de format
- *
- * Return: Nombre de caractères imprimés
- */
+/* Déclaration des fonctions */
 int _printf(const char *format, ...);
+int print_char(va_list args);
+int print_string(va_list args);
+int print_number(va_list args);
 
 #endif /* PRINTF_H */
